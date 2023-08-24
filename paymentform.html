@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <center>
+            <div class="form-body">
+                <form action="">
+                    <h1 class="main-heading">Payment Form</h1>
+                    <h2>Contact Information</h2>
+                    <p>Name: <input type="text" name="name" id="name" placeholder="Enter your name" required></p>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <p>
+                            Male<input type="radio" name="Gender" id="Male" required>
+                            Female<input type="radio" name="Gender" id="Female" required>
+                        </p>
+                    </fieldset>
+                    <p>
+                        Address: <textarea name="Address" id="Address" cols="29" rows="3" placeholder="Enter your address" required></textarea>
+                    </p>
+                    <p>Email: <input type="email" name="email" id="email" placeholder="Enter your email" required></p>
+                    <p>Pincode: <input type="number" id="pincode" placeholder="Enter your Pincode" required></p>
+                    <h2>Payment Information</h2>
+                    <p>Card Type
+                    <Select name="card_type" id="card_type" required>
+                        <option value="">--Select card type--</option>
+                        <option value="Visa">Visa</option>
+                        <option value="MasterCard">Mastercard</option>
+                        <option value="Rupay">Rupay</option>
+                        <option value="Verve">Verve</option>
+                    </Select>
+                    </p>
+                    <p>
+                        Card number: <input type="number" id="card_number" placeholder="Enter your card number" required>
+                    </p>
+                    <p>
+                        Expiry Date: <input type="date" id="card_expirydate" required>
+                    </p>
+                    <p>
+                        CVV: <input type="number" id="card_CVV" placeholder="Enter your CVV" required>
+                    </p>
+                    <button>Pay Now</button>
+                </form>
+            </div>
+    </center>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
